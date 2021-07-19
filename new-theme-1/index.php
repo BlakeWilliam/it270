@@ -36,7 +36,12 @@ get_header();
     <?php endwhile; ?>
 
 <?php else : ?>
-    <?php echo wpautop('Sorry, no posts were found!') ;?>
+    <?php 
+        echo '<h2>Search Results:</h2>
+        <p>Sorry, we could not find anything matching your keywords</p>
+        <p>Try another search using different words</p>'   
+    ;?>
+    <?php get_search_form(); ?>
 <?php endif; ?>
 </main>
 
