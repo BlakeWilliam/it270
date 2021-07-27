@@ -3,7 +3,7 @@ get_header();
 
 ?>
 
-<div id="wrapper">
+<div class="wrapper">
 <main>
 <?php if(have_posts()) : ?>
 <h1 class="page-title">

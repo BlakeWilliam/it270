@@ -2,9 +2,10 @@
 get_header();
 
 ?>
-
-
-<div id="wrapper">
+<div id="hero">
+    <img src="<?php echo get_template_directory_uri(); ?>/../../uploads/yellowstone-inner.jpg" alt="banner">
+</div>
+<div class="wrapper">
 <main>
 
     <!-- If we have posts... 
@@ -27,10 +28,18 @@ get_header();
 <?php else : ?>
     <?php echo wpautop('Sorry, no posts were found!') ;?>
 <?php endif; ?>
+
+<!-- FOR PREVIOUS OR NEXT POST LINKS AT BOTTOM OF BLOG ENTRY -->
+<span class="next previous">
+<?php (previous_post_link()) ? '%link' : ''; ?> &nbsp; &nbsp; <?php (next_post_link()) ? '%link' : ''; ?>
+</span>
+
+<!-- Add Comment replys template -->
+<?php comments_template(); ?>
 </main>
 
 <aside>
-
+This is my single page
 </aside>
 
 

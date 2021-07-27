@@ -2,9 +2,10 @@
 get_header();
 
 ?>
-
-
-<div id="wrapper">
+<div id="hero">
+    <img src="<?php echo get_template_directory_uri(); ?>/../../uploads/yellowstone-inner.jpg" alt="banner">
+</div>
+<div class="wrapper">
 <main>
 
     <!-- If we have posts... 
@@ -45,9 +46,7 @@ get_header();
 <?php endif; ?>
 </main>
 
-<aside>
-
-</aside>
+<?php get_sidebar(); ?>
 
 
 </div>

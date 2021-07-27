@@ -4,9 +4,12 @@ get_header();
 /* Template Name: Front Page */
 
 ?>
+<div id="hero">
+    <img src="https://www.blakewagrade.com/it270/wp-content/uploads/yellowstone-header-home.jpg" alt="banner">
+</div>
+<!-- end hero image -->
+<div class="wrapper">
 
-
-<div id="wrapper">
     <!-- If we have posts... 
     show me the posts! 
     If not... 
@@ -16,7 +19,6 @@ get_header();
 <?php endif; ?>
 <?php if(have_posts()) : ?>
     <?php while(have_posts()) : the_post() ; ?>
-    <h2><?php the_title() ;?></h2>
     <?php the_content() ; ?>
     <?php endwhile; ?>
 <?php else : ?>
@@ -25,10 +27,10 @@ get_header();
 
 
 
-
 </div>
 <!-- END WRAPPER -->
-<?php
-get_footer();
-
-?>
+<div class="full-width">
+<?php dynamic_sidebar( 'sidebar-buy' ); ?>
+</div>
+<!-- end full width div -->
+<?php get_footer(); ?>
