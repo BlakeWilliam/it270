@@ -1,0 +1,488 @@
+/* styles for our first theme wordpress website */
+/* Theme name : new-theme-1
+Author: Blake Agrade
+Author URL: http://blakewagrade.com
+Description: Our First Wordpress Theme */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #bbb4b4;
+}
+
+.home #hero {
+	background-image: url(https://www.blakewagrade.com/it270/wp-content/uploads/yellowstone-header-home.jpg);
+	background-attachment: fixed;
+	background-size: 100%;
+	background-position: 0 150px;
+	min-height: 600px;
+	max-width:100%;
+	background-repeat: no-repeat;
+}
+
+.home #hero img {
+	display: none;
+}
+
+.inner-page #hero {
+	background-image: url(https://www.blakewagrade.com/it270/wp-content/uploads/yellowstone-inner.jpg);
+	background-attachment: fixed;
+	background-size: 100%;
+	background-position: 0 150px;
+	min-height: 400px;
+	max-width: 100%;
+	background-repeat: no-repeat;
+}
+
+.inner-page #hero img {
+	display: none;
+}
+
+#top {
+    background: #d3d3d3;
+    height: 60px;
+    line-height: 60px;
+    padding: 0 20px;
+}
+
+/* Search form */
+main #searchform {
+	float:none;
+	}
+
+#searchform {
+    float: right;
+}
+
+.screen-reader-text {
+    display: none;
+
+}
+
+#top input#s {
+    height: 30;
+    font-size: 1.3em;
+}
+
+#top input#searchsubmit {
+    padding: 4px;
+    background: #f4a460;
+    margin-right: 5px;
+}
+/* end search form */
+
+.home .size-post-thumbnail {
+    width: 100%;
+    height: 100%;
+}
+
+header {
+	height:150px;
+    background:#d3d3d3;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+}	
+
+.inner-header {
+    max-width: 1100px;
+    margin: 0 auto;  
+}
+
+#logo {
+    float: left;
+    margin: 35px 0px;
+}
+
+.menu-my-primary-menu-container {
+    float: right;
+    margin-top: 15px;
+}
+
+.main-navigation {
+    float: right;
+}
+.main-navigation li{
+    float: left;
+    list-style-type: none;
+    margin-left: 20px;
+    position: relative;
+    padding: 5px 0;
+}
+
+.main-navigation a {
+    text-decoration: none;
+	displayL block;
+	padding: 3px;
+}
+.sub-menu {
+    display: none;
+}
+
+.main-navigation li:hover .sub-menu {
+    display: block;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    padding: 6px;
+	background: #ffffff;
+	width: auto;
+}
+
+.main-navigation li:hover .sub-menu  li{
+    margin-left: 0;
+	width: 155px;
+}
+
+#search-error {
+	max-width: 1100px;
+	margin: 150px auto 20px auto;
+}
+
+.wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+    clear:both;
+}
+
+main {
+    float: left;
+    width: 63%;
+}
+
+aside {
+    float: right;
+    width: 34%;
+    /* height: 400px; */
+    /* background:#ffffff; */
+	padding: 15px;
+}
+
+
+#custom_html-2 {
+	background:#ffffff;
+	margin-top:-15px;
+	padding: 3% 3% 3% 3%;
+}
+#nav_menu-2 {
+	background:#ffffff;
+	padding: 1% 3% 3% 3%;
+}
+
+.menu-our-tours-menu-container {
+	margin-left: 15px;
+	margin-bottom: 15px;
+}
+
+.menu-our-tours-menu-container li{
+	line-height: 1.3;
+	list-style-type: none;
+	font-weight: bold;
+}
+
+#text-2 {
+	margin-top: 20px;
+	border: 2px solid orange;
+	padding: 3% 3% 3% 3%
+}
+
+.full-width {
+	clear: both;
+    background: #FFFFFF;
+}
+
+#custom_html-3 {
+	max-width: 1100px;
+	margin: 0 auto;
+	padding: 20px 0;
+	text-align: center;
+}
+
+footer {
+    clear: both;
+    background: #d3d3d3;
+	padding-top: 20px;
+}
+
+.row {
+
+}
+
+.third {
+	/* 940 grid
+	300 tims 3 plus 2 gutters of 20px = 940px */
+	width: 31.91%;
+	float: left;
+	margin-right:2.12%;
+}
+
+.third:last-of-type {
+	margin-right: 0;
+}
+
+.third img {
+	padding-top:15px;
+	max-width: 95%;
+	height:  auto;
+}
+
+.col-8 {
+	width: 48.93%;
+	float: left;
+}
+
+.col-8:last-of-type {
+	float: right;
+}
+
+.col-8 img {
+	padding-top:15px;
+	max-width: 90%;
+	height:  auto;
+}
+blockquote {
+	font-size: 1.5em;
+	margin: 0 10% 20px 10%;
+	font-style: italic;
+	line-height: 1.2;
+	text-align: center;
+}
+
+.big-font {
+	font-size: 1.2em;
+	margin: 0 5% 20px 5%;
+}
+
+.copyright li {
+    float: left;
+    margin-right: 30px;
+}
+
+.copyright {
+    height: 50px;
+    line-height: 50px;
+	clear: both;
+    /* background: #d3d3d3;
+} */
+
+.copyright ul {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+h1{
+	font-size:2.44em;
+	color:#2c38d4;
+	margin-bottom: 10px;
+	text-align:center;
+}
+h1 a {
+	color:#313155;
+}
+
+article span {
+    font-style: italic;
+}
+
+.block {
+    display: block;
+}
+
+p + .block {
+    margin: -10px 0 20px 0;
+}
+
+
+.thumbnail {
+	margin-bottom: 10px;
+}
+
+.meta {
+    margin-bottom: 10px;
+}
+
+.comment-respond {
+	padding-top: 25px;
+}
+
+.nav-button { display: none; } /* hide the navigation button by default */
+
+/* Responsive sizing - @mediaqueries */
+@media screen and (max-width:1430px) {
+	body {
+
+	}
+
+	.home #hero {
+		background-image: none;
+		margin-top: 165px;
+		min-height: 600px;
+		max-height: auto;
+		
+	}
+	
+	.home #hero img {
+		display: block;
+	}
+	
+	.inner-page #hero {
+		background-image: none;
+		margin-top: 150px;
+		min-height: auto;
+		max-width: 100%;
+
+	}
+	
+	.inner-page #hero img {
+		display: block;
+	}
+	
+}
+@media only screen and (max-width: 700px) {
+
+	/* Navigation Button
+	-------------------------------------------------------- */
+
+	.nav-button {
+		display: block;
+		position: absolute;
+		top: 7px;
+		left: 7px;
+		width: 50px;
+		height: 35px;
+		background: url('images/menu-icon-large.png'), linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,.2));
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: 21px, 100%;
+		cursor: pointer;
+		border: 0 none;
+		border-bottom: 1px solid rgba(255,255,255,.1);
+		box-shadow: 0 0 4px rgba(0,0,0,.7) inset;
+		border-radius: 5px;
+		z-index: 999;
+		text-indent: -9999px;
+	}
+	.nav-button:hover {
+		background-color: rgba(0,0,0,.1);
+	}
+	.nav-button.open {
+		background: url('images/close-icon-large.png'), linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,.2));
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: 21px, 100%;
+	}
+
+	/* Navigation Bar
+	-------------------------------------------------------- */
+
+	body { padding-top: 50px; }
+
+	.primary-nav {
+		width: 100%;
+		float: none;
+		background-color: #a4a5a7; /* change the menu color */
+		background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,.2));
+		display: block;
+		height: 50px;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		box-shadow: 0 1px 2px rgba(0,0,0,.6);
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		z-index: 998;
+		clear: both;
+	}
+	.primary-nav li {
+		display: none;
+		width: 100%;
+		font-family: Arial;
+	}
+
+    .main-navigation li {
+        margin-right: 0px;
+    }
+
+    .main-navigation li:hover .sub-menu {
+        position: static;
+        top: 0;
+        padding: 0;
+        left: 0;
+    }
+    
+	.main-navigation li:hover .sub-menu  li{
+		width: 100%;
+	}
+    
+
+	.primary-nav li a {
+		display: block;
+		width: 90%;
+		padding: 10px 5%;
+		font-size: 14px;
+		font-weight: bold;
+		text-shadow: -1px -1px 0 rgba(0,0,0,.15);
+		color: white;
+		text-decoration: none;
+		border-bottom: 1px solid rgba(0,0,0,.2);
+		border-top: 1px solid rgba(255,255,255,.1);
+	}
+	.primary-nav li a:hover {
+		background-color: rgba(0,0,0,.5);
+		border-top-color: transparent;
+	}
+	.primary-nav > li:first-child {
+		border-top: 1px solid rgba(0,0,0,.2);
+	}
+
+	/* Toggle the navigation bar open  */
+
+	.primary-nav.open {
+		height: auto;
+		padding-top: 50px;
+	}
+	.primary-nav.open li {
+		display: block;
+	}
+
+	/* Submenus – optional .parent class indicates dropdowns */
+
+	.primary-nav > li:hover > a {
+		background: rgba(0,0,0,.5);
+		border-bottom-color: transparent;
+	}
+	.primary-nav li.parent > a:after {
+		content: "▼";
+		color: rgba(255,255,255,.5);
+		float: right;
+	}
+	.primary-nav li.parent > a:hover {
+		background: rgba(0,0,0,.75);
+	}
+	.primary-nav li ul {
+		display: none;
+		background: rgba(0,0,0,.5);
+		border-top: 0 none;
+		padding: 0;
+	}
+	.primary-nav li ul a {
+		border: 0 none;
+		font-size: 12px;
+		padding: 10px 5%;
+		font-weight: normal;
+	}
+	.primary-nav li:hover ul {
+		display: block;
+		border-top: 0 none;
+	}
+
+} /* End Mobile Styles */
