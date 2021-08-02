@@ -14,7 +14,8 @@ add_theme_support('post-thumbnails');
 register_nav_menus(array(
     'primary' => 'Primary Menu',
     'tours' => 'Tours Menu',
-    'footer' => 'Footer Menu'
+    'footer' => 'Footer Menu',
+    'buses' => 'Buses Menu'
     ));
 
 //Page Slug Body Class
@@ -164,3 +165,6 @@ function year(){
     return date('Y');
 }
 add_shortcode('current_year', 'year');
+
+// remove_filter (‘the_content’, ‘wpautop’);
+

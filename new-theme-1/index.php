@@ -32,7 +32,7 @@ get_header();
 <!-- end thumbnail -->
     <?php the_excerpt() ; ?>
     <span class="block">
-        <a href="<?php the_permalink(); ?>">Read More</a>
+        <a href="<?php the_permalink(); ?>">Read More about <?php the_title(); ?></a>
     </span>
     <?php endwhile; ?>
 
